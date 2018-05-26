@@ -1,0 +1,7 @@
+﻿#headline {
+    min-height: 300px;
+    color: whitesmoke;
+    background-image: url(Images/riverside.jpg);
+    background-position: center;
+    background-size: cover;
+}

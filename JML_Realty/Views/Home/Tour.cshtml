@@ -1,0 +1,138 @@
+﻿@model List<List<string>>
+
+@{
+    ViewBag.Title = "Virtual Tour";
+}
+
+
+<div id="tour-title" class="text-center my-5">
+    <h1 class="pt-4">Our Virtual Tour!</h1>
+</div>
+
+<p>
+    Click below to take a virtual tour of a typical unit at 2361 Maryhelen St.
+</p>
+
+<div class="my-5">
+    <ul class="list-group table-hover">
+        <li class="list-group-item"><a href="#living">Living Quarters</a></li>
+        <li class="list-group-item"><a href="#kitchen">Kitchen</a></li>
+        <li class="list-group-item"><a href="#bedroom">Bedroom</a></li>
+    </ul>
+</div>
+
+<div id="living"class="my-5">
+    &nbsp;
+</div>
+
+<h2 class="my-4">Welcome to the Living Quarters!</h2>
+
+<div class="w-100 text-center mt-3 mb-3 bg-dark">
+    <div id="living-carousel" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner justify-content-center">
+            <div class="carousel-item living-slide active">
+                <img class="d-block w-100" src="~/Content/Images/Living/living1.jpg" alt="Garage"/>
+            </div>
+            <div class="carousel-item living-slide">
+                <img class="d-block w-100" src="~/Content/Images/Living/living2.jpg" alt="Staircase" />
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#living-carousel-" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#living-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="row justify-content-center my-5">
+    <a class="btn btn-success w-75" href="#tour-title">Back to Top &raquo;</a>
+</div>
+
+<div id="kitchen" class="my-5">
+    &nbsp;
+</div>
+
+<div class="my-4 justify-content-center">
+    <h2 class="text-center">Cook in Your Cozy Kitchen!</h2>
+</div>
+
+<div class="w-100 text-center mt-3 mb-3 bg-dark">
+    <div id="kitchen-carousel" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner justify-content-center">
+            <div class="carousel-item kitchen-slide active">
+                <img class="d-block w-100" src="~/Content/Images/Kitchen/kitchen1.jpg" alt="Overview" />
+            </div>
+            <div class="carousel-item kitchen-slide">
+                <img class="d-block w-100" src="~/Content/Images/Kitchen/kitchen2.jpg" alt="Dishwasher" />
+            </div>
+            <div class="carousel-item kitchen-slide">
+                <img class="d-block w-100" src="~/Content/Images/Kitchen/kitchen3.jpg" alt="Stove/Oven" />
+            </div>
+            <div class="carousel-item kitchen-slide">
+                <img class="d-block w-100" src="~/Content/Images/Kitchen/kitchen4.jpg" alt="Cabinet" />
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#kitchen-carousel-" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#kitchen-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+
+<div class="row justify-content-center my-4">
+    <a class="btn btn-success w-75" href="#tour-title">Back to Top &raquo;</a>
+</div>
+
+<div id="bedroom" class="my-5">
+    &nbsp;
+</div>
+
+<h2 class="my-4">Rewind and Relax!</h2>
+
+<div class="w-100 text-center mt-3 mb-3 bg-dark">
+    <div id="bedroom-carousel" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner justify-content-center">
+            <div class="carousel-item bedroom-slide active">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br1.jpg" alt="Bedroom 1" />
+            </div>
+            <div class="carousel-item bedroom-slide">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br2.jpg" alt="Bedroom 2" />
+            </div>
+            <div class="carousel-item bedroom-slide">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br3.jpg" alt="Closet 1" />
+            </div>
+            <div class="carousel-item bedroom-slide">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br4.jpg" alt="Closet 2" />
+            </div>
+            <div class="carousel-item bedroom-slide">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br5.jpg" alt="Bathroom Sink 1" />
+            </div>
+            <div class="carousel-item bedroom-slide">
+                <img class="d-block w-100" src="~/Content/Images/Bedroom/br6.jpg" alt="Bathroom Sink 2" />
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#bedroom-carousel-" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#bedroom-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="row justify-content-center my-5">
+    <a class="btn btn-success w-75" href="#tour-title">Back to Top &raquo;</a>
+</div>

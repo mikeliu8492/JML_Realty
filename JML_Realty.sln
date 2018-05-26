@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JML_Realty", "JML_Realty\JML_Realty.csproj", "{BE61174E-DDF5-4824-9140-554A20A6C925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE61174E-DDF5-4824-9140-554A20A6C925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE61174E-DDF5-4824-9140-554A20A6C925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE61174E-DDF5-4824-9140-554A20A6C925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE61174E-DDF5-4824-9140-554A20A6C925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA8EEC79-7362-4EBC-BF48-07D51BB29DEA}
+	EndGlobalSection
+EndGlobal

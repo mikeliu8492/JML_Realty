@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - JML Realty</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top" style="padding-top:-50px; margin-top:-50px">
+        <div class="container">
+            <div class="my-2 ml-2 mr-4">
+                <img src="~/Content/Images/flower.jpg" style="max-height: 30px" alt="Flower" />
+            </div>
+            <a class="navbar-brand" href="mailto:jmlrealty@gmail.com">JML Realty</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-start" id="navbarColor01">
+                <ul class="nav navbar-nav navbar-dark text-light">
+                    <li class="nav-item nav-link ">
+                        <a class="text-white" href="@Url.Action("Index", "Home")">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a class="text-white" href="@Url.Action("About", "Home")">About</a>
+                    </li>
+
+                    <li class="nav-item nav-link">
+                        <a class="text-white" href="@Url.Action("Tour", "Home")">Virtual Tour</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Forms
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/Content/Forms/Application.pdf">Application</a>
+                            <a class="dropdown-item" href="~/Content/Forms/Lease.pdf">Lease</a>
+                            <a class="dropdown-item" href="~/Content/Forms/Condition.pdf">Condition</a>
+                            <a class="dropdown-item" href="~/Content/Forms/Cleaning.pdf">Cleaning</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item nav-link">
+                        <a class="text-white" href="@Url.Action("Index", "Payment")">Payments</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Maintenance
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href=@Url.Action("Index", "Maintenance")>Maintenance FAQ</a>
+                            <a class="dropdown-item" href="~/Content/Forms/Lease.pdf">Maintenance Request Form</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-link">
+                        <a class="text-white" href="@Url.Action("FAQ", "Home")">FAQ</a>
+                    </li>
+
+                    <li class="nav-item nav-link">
+                        <a class="text-white" href="@Url.Action("Form", "Contact")">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="text-white"><strong>Phone: </strong> &nbsp;&nbsp; <a class="text-white" href="tel:1-217-337-1565">217-337-1565</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer >
+            <div class="row bg-dark">
+                <div class="col-md-4">
+
+                    <div class="text-center bg-primary text-white m-3 p-2">
+                        <h5>Contact</h5>
+                    </div>
+
+                    <div class="m-3 p-2">
+                        <div class="mr-3 mb-3 mt-3 w-100 text-center">
+                            <img src="~/Content/Images/front.jpg" style="max-width:100%" />
+                        </div>
+
+                        <div class="mt-5 bg-dark text-white">
+                            JML Realty LLC
+                            <br />
+                            PHONE:  &nbsp;&nbsp;<span><a class="text-white" href="tel:1-217-337-1565">217-337-1565</a></span>
+                            <br />
+                            E-MAIL:  &nbsp;&nbsp;<span><a class="text-white" href="mailto:jmlrealty@gmail.com">jmlrealty@gmail.com</a></span>
+                            <br />
+                            <br />
+
+                            <address>
+                                1141 South Diamond Bar Blvd
+                                <br />
+                                Unit #202
+                                <br />
+                                Diamond Bar, CA 91765
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="col-md-4">
+                    <div class="text-center bg-primary text-white m-3 p-2">
+                        <h5>Location</h5>
+                    </div>
+
+                    <div class="m-3 p-2">
+                        <p class="text-white"><strong>Checkout our property here!</strong></p>
+                        <div>
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.963564919793!2d-117.52495853442382!3d33.89632643892652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb795f93c3f87%3A0x49ed6335df50ce18!2s2341+Mary+Helen+St%2C+Corona%2C+CA+92879!5e0!3m2!1sen!2sus!4v1527106877594" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center bg-primary text-white m-3 p-2">
+                        <h5>Links</h5>
+                    </div>
+                    <div class="m-3 p-2">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action bg-dark site-map">
+                                <img class="img-fluid" style="max-height: 20px;" src="~/Content/Images/flower.jpg" />
+                                <strong><a class="pl-3 text-white" href="@Url.Action("Index", "Home")">Home</a></strong>
+                            </li>
+                            <li class="list-group-item list-group-item-action bg-dark site-map">
+                                <img class="img-fluid" style="max-height: 20px; border:none" src="~/Content/Images/flower.jpg" />
+                                <strong><a class="pl-3 text-white" href="@Url.Action("About", "Home")">About</a></strong>
+                            </li>
+                            <li class="list-group-item list-group-item-action bg-dark site-map">
+                                <img class="img-fluid" style="max-height: 20px; border:none" src="~/Content/Images/flower.jpg" />
+                                <strong><a class="pl-3 text-white" href="~/Content/Forms/Lease.pdf">Maintenance Form</a></strong>
+                            </li>
+                            <li class="list-group-item list-group-item-action bg-dark site-map">
+                                <img class="img-fluid" style="max-height: 20px; border:none" src="~/Content/Images/flower.jpg" />
+                                <strong><a class="pl-3 text-white" href="@Url.Action("Form", "Contact")">Contact Us</a></strong>
+                            </li>
+                            <li class="list-group-item list-group-item-action bg-dark site-map">
+                                <img class="img-fluid" style="max-height: 20px; border:none" src="~/Content/Images/flower.jpg" />
+                                <strong><a class="pl-3 text-white" href="@Url.Action("Index", "Payment")">Payments</a></strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-dark">
+                <div class="col-md-12">
+                    <p class="text-white ml-3 pl-2"><strong>&copy;@DateTime.Now.Year - JML Realty LLC</strong> &nbsp; | &nbsp;<span><img src="~/Content/Images/EHO.png" style="max-height:20px"></span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+
+</html>

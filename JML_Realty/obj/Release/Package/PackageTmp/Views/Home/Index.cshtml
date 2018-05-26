@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+
+<div id="headline" class="text-center">
+    <h1 class="pt-4">Welcome to Your New Home!</h1>
+</div>
+
+<div class="w-100 text-center mt-3 mb-3 bg-dark">
+    <div id="intro-carousel" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner justify-content-center">
+            <div class="carousel-item tour-slide active">
+                <img class="d-block w-100" src="~/Content/Images/ExtShots/ext_shot1.jpg" alt="Exterior shot 1" />
+            </div>
+            <div class="carousel-item tour-slide">
+                <img class="d-block w-100" src="~/Content/Images/ExtShots/ext_shot2.jpg" alt="Exterior shot 2" />
+            </div>
+            <div class="carousel-item tour-slide">
+                <img class="d-block w-100" src="~/Content/Images/ExtShots/ext_shot3.jpg" alt="Exterior shot 3" />
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#intro-carousel-" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#intro-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="row mt-5 jumbotron">
+    <div class="col-md-6 p-3">
+        <h2 class="text-center mb-3">Take a Tour</h2>
+        
+        <div class="text-center">
+            <img src="https://jmlrealty.files.wordpress.com/2016/08/ext_shot3.jpg" style="max-width:400px; max-height: 400px" />
+        </div>
+        
+        <p class="w-75 mx-3 px-4 py-3">
+            JML Realty Units are available in 12 month leases!  Contact us to find out more!
+            In the meanwhile, why don't you take a virtual tour?
+        </p>
+        <p class="mx-3 px-4"><a class="btn btn-default" href=@Url.Action("Tour", "Home")>Virtual Tour &raquo;</a></p>
+    </div>
+    <div class="col-md-6 p-3">
+        <h2 class="text-center mb-3">Your New Home!</h2>
+
+        <div class="text-center">
+            <img src="~/Content/Images/Corona.jpg" style="max-width:400px;" />
+        </div>
+
+        <p class="mx-3 px-4  py-3">
+            Whether you want to go shopping at Ontario Mills, go to the Beach at nearby Irvine, go inland to the Mountains,
+            or just relax Riverside County has something for you, all at an afforable price!
+        </p>
+        <p class="w-75 mx-3 px-4"><a class="btn btn-default" href="https://www.countyofriverside.us/">Learn more &raquo;</a></p>
+
+    </div>
+</div>

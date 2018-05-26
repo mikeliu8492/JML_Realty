@@ -1,0 +1,68 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.site-map {
+    border: none;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+}
+
+.tour-carousel {
+    max-height:500px; 
+    max-width:750px;
+}
+
+.tour-slide > img {
+    max-height: 500px; 
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.tour-slide > img {
+    max-height: 500px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+.living-slide > img {
+    max-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.kitchen-slide > img {
+    max-height: 750px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bedroom-slide > img {
+    max-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+}
